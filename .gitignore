@@ -1,0 +1,16 @@
+# caches and large raw data (fetched by scripts/01_download_data.py)
+cache/
+*.npy
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+# Office documents
+*.docx
+*.doc
+# large rasters other than the small published outputs
+*.tif
+!outputs/gis/flood_classes_20170830_20m.tif
+*.aux.xml

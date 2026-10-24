@@ -1,0 +1,15 @@
+# Python 3.12 or newer (tested with 3.14)
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.1.0
+rasterio==1.5.2
+geopandas==1.2.0
+pyogrio==0.13.0
+shapely==2.2.0
+pyproj==3.8.0
+matplotlib==3.11.2
+scikit-image==0.26.0
+pystac-client==0.9.1
+planetary-computer==1.0.0
+pysheds==0.5
+requests==2.34.2

@@ -1,0 +1,121 @@
+basin,pair,map,land,boundary_share_in_aoi,n_pixels,ref_flood_km2,sar_flood_km2,TP,FP,FN,TN,OA,precision,recall,F1,kappa
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV,all land,1.0,1863873,428.1,90.5,217828,8478,852426,785141,0.538,0.963,0.204,0.336,0.17
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV,built-up,1.0,123888,20.6,0.3,672,105,50938,72173,0.588,0.865,0.013,0.026,0.013
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV,tree cover,1.0,796366,205.1,9.3,21713,1416,491103,282134,0.382,0.939,0.042,0.081,0.027
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV,open land,1.0,943619,202.3,81.0,195443,6957,310385,430834,0.664,0.966,0.386,0.552,0.354
+Brazos upper (Simonton to Rosharon),desc143_20170830,VH,all land,1.0,1863873,428.1,82.8,200089,6789,870165,786830,0.529,0.967,0.187,0.313,0.156
+Brazos upper (Simonton to Rosharon),desc143_20170830,VH,built-up,1.0,123888,20.6,0.3,752,47,50858,72231,0.589,0.941,0.015,0.029,0.016
+Brazos upper (Simonton to Rosharon),desc143_20170830,VH,tree cover,1.0,796366,205.1,4.9,11750,585,501066,282965,0.37,0.953,0.023,0.045,0.015
+Brazos upper (Simonton to Rosharon),desc143_20170830,VH,open land,1.0,943619,202.3,77.5,187587,6157,318241,431634,0.656,0.968,0.371,0.536,0.34
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV or VH,all land,1.0,1863873,428.1,99.0,237418,10002,832836,783617,0.548,0.96,0.222,0.36,0.185
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV or VH,built-up,1.0,123888,20.6,0.4,922,136,50688,72142,0.59,0.871,0.018,0.035,0.019
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV or VH,tree cover,1.0,796366,205.1,10.0,23572,1528,489244,282022,0.384,0.939,0.046,0.088,0.029
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV or VH,open land,1.0,943619,202.3,88.5,212924,8338,292904,429453,0.681,0.962,0.421,0.586,0.385
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV Otsu only,all land,1.0,1863873,428.1,124.3,274698,36028,795556,757591,0.554,0.884,0.257,0.398,0.188
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV Otsu only,built-up,1.0,123888,20.6,3.3,3819,4460,47791,67818,0.578,0.461,0.074,0.128,0.014
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV Otsu only,tree cover,1.0,796366,205.1,13.4,30369,3085,482447,280465,0.39,0.908,0.059,0.111,0.035
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV Otsu only,open land,1.0,943619,202.3,107.6,240510,28483,265318,409308,0.689,0.894,0.475,0.621,0.396
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV log-ratio only,all land,1.0,1863873,428.1,98.5,235863,10269,834391,783350,0.547,0.958,0.22,0.358,0.183
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV log-ratio only,built-up,1.0,123888,20.6,0.5,831,297,50779,71981,0.588,0.737,0.016,0.032,0.014
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV log-ratio only,tree cover,1.0,796366,205.1,14.6,34267,2140,478549,281410,0.396,0.941,0.067,0.125,0.043
+Brazos upper (Simonton to Rosharon),desc143_20170830,VV log-ratio only,open land,1.0,943619,202.3,83.4,200765,7832,305063,429959,0.668,0.962,0.397,0.562,0.362
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV,all land,1.0,1863873,428.1,69.8,159688,14801,910566,778818,0.504,0.915,0.149,0.257,0.114
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV,built-up,1.0,123888,20.6,0.2,411,149,51199,72129,0.586,0.734,0.008,0.016,0.007
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV,tree cover,1.0,796366,205.1,4.6,10455,958,502361,282592,0.368,0.916,0.02,0.04,0.012
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV,open land,1.0,943619,202.3,65.0,148822,13694,357006,424097,0.607,0.916,0.294,0.445,0.25
+Brazos upper (Simonton to Rosharon),asc034_20170829,VH,all land,1.0,1863873,428.1,59.0,134708,12686,935546,780933,0.491,0.914,0.126,0.221,0.096
+Brazos upper (Simonton to Rosharon),asc034_20170829,VH,built-up,1.0,123888,20.6,0.3,463,269,51147,72009,0.585,0.633,0.009,0.018,0.006
+Brazos upper (Simonton to Rosharon),asc034_20170829,VH,tree cover,1.0,796366,205.1,2.2,4967,455,507849,283095,0.362,0.916,0.01,0.019,0.006
+Brazos upper (Simonton to Rosharon),asc034_20170829,VH,open land,1.0,943619,202.3,56.5,129278,11962,376550,425829,0.588,0.915,0.256,0.4,0.216
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV or VH,all land,1.0,1863873,428.1,76.5,173791,17370,896463,776249,0.51,0.909,0.162,0.276,0.123
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV or VH,built-up,1.0,123888,20.6,0.4,584,344,51026,71934,0.585,0.629,0.011,0.022,0.008
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV or VH,tree cover,1.0,796366,205.1,4.9,11115,1051,501701,282499,0.369,0.914,0.022,0.042,0.013
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV or VH,open land,1.0,943619,202.3,71.2,162092,15975,343736,421816,0.619,0.91,0.32,0.474,0.27
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV Otsu only,all land,1.0,1863873,428.1,94.8,207406,29557,862848,764062,0.521,0.875,0.194,0.317,0.138
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV Otsu only,built-up,1.0,123888,20.6,1.2,1401,1697,50209,70581,0.581,0.452,0.027,0.051,0.004
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV Otsu only,tree cover,1.0,796366,205.1,6.6,14772,1835,498044,281715,0.372,0.89,0.029,0.056,0.016
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV Otsu only,open land,1.0,943619,202.3,86.9,191233,26025,314595,411766,0.639,0.88,0.378,0.529,0.305
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV log-ratio only,all land,1.0,1863873,428.1,77.1,174346,18460,895908,775159,0.509,0.904,0.163,0.276,0.122
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV log-ratio only,built-up,1.0,123888,20.6,0.8,1005,956,50605,71322,0.584,0.512,0.019,0.038,0.007
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV log-ratio only,tree cover,1.0,796366,205.1,8.3,18805,1928,494011,281622,0.377,0.907,0.037,0.07,0.022
+Brazos upper (Simonton to Rosharon),asc034_20170829,VV log-ratio only,open land,1.0,943619,202.3,68.0,154536,15576,351292,422215,0.611,0.908,0.306,0.457,0.257
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV,all land,1.0,416415,140.6,16.6,40515,1029,310922,63949,0.251,0.975,0.115,0.206,0.034
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV,built-up,1.0,2987,0.6,0.0,97,2,1517,1371,0.491,0.98,0.06,0.113,0.054
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV,tree cover,1.0,237379,83.6,1.4,3442,36,205543,28358,0.134,0.99,0.016,0.032,0.004
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV,open land,1.0,176049,56.3,15.2,36976,991,103862,34220,0.404,0.974,0.263,0.414,0.112
+Brazos lower (Rosharon to Freeport),desc143_20170830,VH,all land,1.0,416415,140.6,16.3,39853,897,311584,64081,0.25,0.978,0.113,0.203,0.034
+Brazos lower (Rosharon to Freeport),desc143_20170830,VH,built-up,1.0,2987,0.6,0.1,230,3,1384,1370,0.536,0.987,0.143,0.249,0.131
+Brazos lower (Rosharon to Freeport),desc143_20170830,VH,tree cover,1.0,237379,83.6,0.7,1676,10,207309,28384,0.127,0.994,0.008,0.016,0.002
+Brazos lower (Rosharon to Freeport),desc143_20170830,VH,open land,1.0,176049,56.3,15.5,37947,884,102891,34327,0.411,0.977,0.269,0.422,0.117
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV or VH,all land,1.0,416415,140.6,19.8,48146,1307,303291,63671,0.269,0.974,0.137,0.24,0.04
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV or VH,built-up,1.0,2987,0.6,0.1,254,5,1360,1368,0.543,0.981,0.157,0.271,0.143
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV or VH,tree cover,1.0,237379,83.6,1.5,3724,42,205261,28352,0.135,0.989,0.018,0.035,0.004
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV or VH,open land,1.0,176049,56.3,18.2,44168,1260,96670,33951,0.444,0.972,0.314,0.474,0.138
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV Otsu only,all land,1.0,416415,140.6,27.4,57921,10551,293516,54427,0.27,0.846,0.165,0.276,0.001
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV Otsu only,built-up,1.0,2987,0.6,0.2,406,120,1208,1253,0.555,0.772,0.252,0.379,0.155
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV Otsu only,tree cover,1.0,237379,83.6,2.5,5679,561,203306,27833,0.141,0.91,0.027,0.053,0.002
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV Otsu only,open land,1.0,176049,56.3,24.7,51836,9870,89002,25341,0.438,0.84,0.368,0.512,0.048
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV log-ratio only,all land,1.0,416415,140.6,18.3,44561,1271,306876,63707,0.26,0.972,0.127,0.224,0.037
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV log-ratio only,built-up,1.0,2987,0.6,0.0,114,3,1500,1370,0.497,0.974,0.071,0.132,0.063
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV log-ratio only,tree cover,1.0,237379,83.6,2.2,5320,84,203665,28310,0.142,0.984,0.025,0.05,0.005
+Brazos lower (Rosharon to Freeport),desc143_20170830,VV log-ratio only,open land,1.0,176049,56.3,16.1,39127,1184,101711,34027,0.416,0.971,0.278,0.432,0.118
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV,all land,1.0,462773,157.2,11.6,27975,1074,365148,68576,0.209,0.963,0.071,0.133,0.018
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV,built-up,1.0,3659,0.8,0.0,17,0,1975,1667,0.46,1.0,0.009,0.017,0.008
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV,tree cover,1.0,268309,94.7,0.4,1064,48,235760,31437,0.121,0.957,0.004,0.009,0.001
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV,open land,1.0,190805,61.7,11.2,26894,1026,127413,35472,0.327,0.963,0.174,0.295,0.063
+Brazos lower (Rosharon to Freeport),asc034_20170829,VH,all land,1.0,462773,157.2,9.5,23065,579,370058,69071,0.199,0.976,0.059,0.111,0.016
+Brazos lower (Rosharon to Freeport),asc034_20170829,VH,built-up,1.0,3659,0.8,0.0,21,0,1971,1667,0.461,1.0,0.011,0.021,0.01
+Brazos lower (Rosharon to Freeport),asc034_20170829,VH,tree cover,1.0,268309,94.7,0.1,315,11,236509,31474,0.118,0.966,0.001,0.003,0.0
+Brazos lower (Rosharon to Freeport),asc034_20170829,VH,open land,1.0,190805,61.7,9.3,22729,568,131578,35930,0.307,0.976,0.147,0.256,0.056
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV or VH,all land,1.0,462773,157.2,12.8,30817,1147,362306,68503,0.215,0.964,0.078,0.145,0.02
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV or VH,built-up,1.0,3659,0.8,0.0,28,0,1964,1667,0.463,1.0,0.014,0.028,0.013
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV or VH,tree cover,1.0,268309,94.7,0.5,1108,52,235716,31433,0.121,0.955,0.005,0.009,0.001
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV or VH,open land,1.0,190805,61.7,12.3,29681,1095,124626,35403,0.341,0.964,0.192,0.321,0.071
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV Otsu only,all land,1.0,462773,157.2,16.2,34361,6112,358762,63538,0.212,0.849,0.087,0.158,-0.0
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV Otsu only,built-up,1.0,3659,0.8,0.1,124,7,1868,1660,0.488,0.947,0.062,0.117,0.053
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV Otsu only,tree cover,1.0,268309,94.7,0.7,1508,287,235316,31198,0.122,0.84,0.006,0.013,-0.001
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV Otsu only,open land,1.0,190805,61.7,15.4,32729,5818,121578,30680,0.332,0.849,0.212,0.339,0.024
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV log-ratio only,all land,1.0,462773,157.2,14.7,35000,1702,358123,67948,0.222,0.954,0.089,0.163,0.021
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV log-ratio only,built-up,1.0,3659,0.8,0.0,47,33,1945,1634,0.459,0.588,0.024,0.045,0.003
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV log-ratio only,tree cover,1.0,268309,94.7,1.6,3666,252,233158,31233,0.13,0.936,0.015,0.03,0.002
+Brazos lower (Rosharon to Freeport),asc034_20170829,VV log-ratio only,open land,1.0,190805,61.7,13.1,31287,1417,123020,35081,0.348,0.957,0.203,0.335,0.072
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV,all land,0.898,5711220,644.2,31.9,65659,14051,1544837,4086673,0.727,0.824,0.041,0.078,0.052
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV,built-up,0.898,635412,33.8,0.5,703,518,83898,550293,0.867,0.576,0.008,0.016,0.013
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV,tree cover,0.898,3501008,447.2,6.0,14485,596,1103482,2382445,0.685,0.96,0.013,0.026,0.017
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV,open land,0.898,1574800,163.2,25.4,50471,12937,357457,1153935,0.765,0.796,0.124,0.214,0.155
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VH,all land,0.898,5711220,644.2,28.7,57129,14538,1553367,4086186,0.725,0.797,0.035,0.068,0.045
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VH,built-up,0.898,635412,33.8,0.3,602,234,83999,550577,0.867,0.72,0.007,0.014,0.012
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VH,tree cover,0.898,3501008,447.2,3.0,7203,388,1110764,2382653,0.683,0.949,0.006,0.013,0.009
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VH,open land,0.898,1574800,163.2,25.3,49324,13916,358604,1152956,0.763,0.78,0.121,0.209,0.15
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV or VH,all land,0.898,5711220,644.2,39.6,79905,19078,1530591,4081646,0.729,0.807,0.05,0.093,0.063
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV or VH,built-up,0.898,635412,33.8,0.6,988,624,83613,550187,0.867,0.613,0.012,0.023,0.018
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV or VH,tree cover,0.898,3501008,447.2,6.5,15634,740,1102333,2382301,0.685,0.955,0.014,0.028,0.019
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV or VH,open land,0.898,1574800,163.2,32.4,63283,17714,344645,1149158,0.77,0.781,0.155,0.259,0.189
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV Otsu only,all land,0.898,5711220,644.2,112.0,137231,142657,1473265,3958067,0.717,0.49,0.085,0.145,0.067
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV Otsu only,built-up,0.898,635412,33.8,15.8,6078,33469,78523,517342,0.824,0.154,0.072,0.098,0.014
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV Otsu only,tree cover,0.898,3501008,447.2,11.9,25322,4515,1092645,2378526,0.687,0.849,0.023,0.044,0.028
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV Otsu only,open land,0.898,1574800,163.2,84.2,105831,104673,302097,1062199,0.742,0.503,0.259,0.342,0.201
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV log-ratio only,all land,0.898,5711220,644.2,36.9,75844,16406,1534652,4084318,0.728,0.822,0.047,0.089,0.06
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV log-ratio only,built-up,0.898,635412,33.8,0.9,890,1442,83711,549369,0.866,0.382,0.011,0.02,0.013
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV log-ratio only,tree cover,0.898,3501008,447.2,8.9,21321,974,1096646,2382067,0.686,0.956,0.019,0.037,0.025
+"San Jacinto (Cypress, Spring, Lake Houston)",desc143_20170830,VV log-ratio only,open land,0.898,1574800,163.2,27.0,53633,13990,354295,1152882,0.766,0.793,0.131,0.226,0.164
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV,all land,0.898,5711220,644.2,61.2,113758,39359,1496738,4061365,0.731,0.743,0.071,0.129,0.084
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV,built-up,0.898,635412,33.8,1.0,1499,1097,83102,549714,0.867,0.577,0.018,0.034,0.027
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV,tree cover,0.898,3501008,447.2,8.8,19935,2068,1098032,2380973,0.686,0.906,0.018,0.035,0.023
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV,open land,0.898,1574800,163.2,51.4,92324,36194,315604,1130678,0.777,0.718,0.226,0.344,0.251
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VH,all land,0.898,5711220,644.2,56.2,102680,37903,1507816,4062821,0.729,0.73,0.064,0.117,0.075
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VH,built-up,0.898,635412,33.8,1.3,1712,1556,82889,549255,0.867,0.524,0.02,0.039,0.029
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VH,tree cover,0.898,3501008,447.2,5.0,11430,1027,1106537,2382014,0.684,0.918,0.01,0.02,0.013
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VH,open land,0.898,1574800,163.2,49.9,89538,35320,318390,1131552,0.775,0.717,0.219,0.336,0.244
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV or VH,all land,0.898,5711220,644.2,74.4,135701,50310,1474795,4050414,0.733,0.73,0.084,0.151,0.098
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV or VH,built-up,0.898,635412,33.8,1.8,2422,2166,82179,548645,0.867,0.528,0.029,0.054,0.041
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV or VH,tree cover,0.898,3501008,447.2,9.6,21510,2372,1096457,2380669,0.686,0.901,0.019,0.038,0.025
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV or VH,open land,0.898,1574800,163.2,63.0,111769,45772,296159,1121100,0.783,0.709,0.274,0.395,0.293
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV Otsu only,all land,0.898,5711220,644.2,111.3,181216,96932,1429280,4003792,0.733,0.652,0.113,0.192,0.119
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV Otsu only,built-up,0.898,635412,33.8,7.5,5396,13344,79205,537467,0.854,0.288,0.064,0.104,0.059
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV Otsu only,tree cover,0.898,3501008,447.2,13.5,29045,4786,1088922,2378255,0.688,0.859,0.026,0.05,0.032
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV Otsu only,open land,0.898,1574800,163.2,90.2,146775,78802,261153,1088070,0.784,0.651,0.36,0.463,0.342
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV log-ratio only,all land,0.898,5711220,644.2,73.6,133205,50907,1477291,4049817,0.732,0.723,0.083,0.148,0.096
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV log-ratio only,built-up,0.898,635412,33.8,3.3,2485,5698,82116,545113,0.862,0.304,0.029,0.054,0.031
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV log-ratio only,tree cover,0.898,3501008,447.2,14.4,32161,3850,1085806,2379191,0.689,0.893,0.029,0.056,0.037
+"San Jacinto (Cypress, Spring, Lake Houston)",asc034_20170829,VV log-ratio only,open land,0.898,1574800,163.2,56.0,98559,41359,309369,1125513,0.777,0.704,0.242,0.36,0.262

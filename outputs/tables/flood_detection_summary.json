@@ -1,0 +1,68 @@
+{
+ "desc143_20170830": {
+  "vv_otsu_only_km2": 1311.8,
+  "vv_change_only_km2": 730.5,
+  "vv": {
+   "T_post_db": -11.78,
+   "T_change_db": -3.11,
+   "bimodal_tiles_post": 888,
+   "bimodal_tiles_change": 719,
+   "tiles_used": 30,
+   "flood_km2": 651.0
+  },
+  "vh": {
+   "T_post_db": -18.52,
+   "T_change_db": -3.91,
+   "bimodal_tiles_post": 992,
+   "bimodal_tiles_change": 752,
+   "tiles_used": 30,
+   "flood_km2": 793.0
+  },
+  "classes_km2": {
+   "not_flooded": 14122.4,
+   "flooded": 651.0,
+   "permanent_water": 860.3,
+   "excluded_hand": 2109.0,
+   "possible_flooded_urban": 201.6
+  },
+  "vv_vh_agreement": {
+   "both_km2": 530.0,
+   "either_km2": 913.9,
+   "jaccard": 0.58
+  },
+  "valid_km2": 17944.2
+ },
+ "asc034_20170829": {
+  "vv_otsu_only_km2": 1409.2,
+  "vv_change_only_km2": 1157.7,
+  "vv": {
+   "T_post_db": -11.52,
+   "T_change_db": -2.23,
+   "bimodal_tiles_post": 957,
+   "bimodal_tiles_change": 777,
+   "tiles_used": 30,
+   "flood_km2": 940.5
+  },
+  "vh": {
+   "T_post_db": -18.14,
+   "T_change_db": -2.78,
+   "bimodal_tiles_post": 1016,
+   "bimodal_tiles_change": 825,
+   "tiles_used": 30,
+   "flood_km2": 954.0
+  },
+  "classes_km2": {
+   "not_flooded": 14262.5,
+   "flooded": 940.5,
+   "permanent_water": 908.5,
+   "excluded_hand": 2337.2,
+   "possible_flooded_urban": 520.9
+  },
+  "vv_vh_agreement": {
+   "both_km2": 716.6,
+   "either_km2": 1177.9,
+   "jaccard": 0.608
+  },
+  "valid_km2": 18969.6
+ }
+}

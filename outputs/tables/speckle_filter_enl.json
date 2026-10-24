@@ -1,0 +1,62 @@
+{
+ "desc143_pre_vv": {
+  "dates": [
+   "2017-08-06",
+   "2017-08-12",
+   "2017-08-18"
+  ],
+  "enl_estimate": 20.98,
+  "valid_fraction": 0.9459
+ },
+ "desc143_pre_vh": {
+  "dates": [
+   "2017-08-06",
+   "2017-08-12",
+   "2017-08-18"
+  ],
+  "enl_estimate": 22.74,
+  "valid_fraction": 0.9459
+ },
+ "desc143_post_vv": {
+  "dates": [
+   "2017-08-30"
+  ],
+  "enl_estimate": 12.75,
+  "valid_fraction": 1.0
+ },
+ "desc143_post_vh": {
+  "dates": [
+   "2017-08-30"
+  ],
+  "enl_estimate": 13.53,
+  "valid_fraction": 1.0
+ },
+ "asc034_pre_vv": {
+  "dates": [
+   "2017-08-05"
+  ],
+  "enl_estimate": 13.27,
+  "valid_fraction": 1.0
+ },
+ "asc034_pre_vh": {
+  "dates": [
+   "2017-08-05"
+  ],
+  "enl_estimate": 13.91,
+  "valid_fraction": 1.0
+ },
+ "asc034_post_vv": {
+  "dates": [
+   "2017-08-29"
+  ],
+  "enl_estimate": 12.93,
+  "valid_fraction": 1.0
+ },
+ "asc034_post_vh": {
+  "dates": [
+   "2017-08-29"
+  ],
+  "enl_estimate": 13.43,
+  "valid_fraction": 1.0
+ }
+}
