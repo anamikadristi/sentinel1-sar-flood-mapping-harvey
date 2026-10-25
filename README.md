@@ -170,7 +170,7 @@ bash scripts/run_all.sh
    - 3 excluded by HAND;
    - 4 possible flooded urban;
    - 255 no data.
-2. Add the layers in `outputs/gis/harvey_sar_flood_2017.gpkg`: `tract_flood_exposure`, `zcta_flood` and `flood_extent_20170830` (patches of 2 ha or more). ArcGIS Pro reads GeoPackage natively. A shapefile copy of the tract layer, with short field names, is in `outputs/gis/tract_flood_exposure_shp/`.
+2. Add the layers in `outputs/gis/harvey_sar_flood_2017.gpkg`: `tract_flood_exposure`, `zcta_flood` and `flood_extent_20170830` (flood patches selected at 2 ha or more; after conversion to polygons some single polygons are smaller). ArcGIS Pro reads GeoPackage natively. A shapefile copy of the tract layer, with short field names, is in `outputs/gis/tract_flood_exposure_shp/`.
 3. To repeat the validation in ArcGIS Pro:
    - download the USGS zip files listed in `scripts/01_download_data.py`;
    - use Tabulate Area between the flood raster and the USGS `*_final.shp` polygons inside the `*_bndy.shp` boundaries;
@@ -198,6 +198,10 @@ sentinel1-sar-flood-mapping-harvey/
     tables/                   CSV and JSON results
     gis/                      flood GeoTIFF, GeoPackage, tract shapefile
 ```
+
+## Metadata
+
+FGDC CSDGM (FGDC-STD-001-1998) metadata for the flood-class GeoTIFF and the GeoPackage are in [`metadata/`](metadata/), validated against the official FGDC XML Schema and the USGS `mp` parser.
 
 ## References
 

@@ -1,0 +1,868 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Anamika Dristi</origin>
+        <pubdate>20261023</pubdate>
+        <title>Hurricane Harvey Sentinel-1 SAR flood exposure by census tract and ZCTA, and flood extent polygons, 30 August 2017, Houston and the lower Brazos River, Texas</title>
+        <geoform>vector digital data</geoform>
+        <othercit>GitHub repository sentinel1-sar-flood-mapping-harvey, file outputs/gis/harvey_sar_flood_2017.gpkg</othercit>
+        <onlink>https://github.com/anamikadristi/sentinel1-sar-flood-mapping-harvey</onlink>
+        <onlink>https://github.com/anamikadristi/sentinel1-sar-flood-mapping-harvey/blob/main/outputs/gis/harvey_sar_flood_2017.gpkg</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>GeoPackage (EPSG:32615) with three polygon layers derived from the 30 August 2017 Sentinel-1 open-water flood map: tract_flood_exposure (1,002 census tracts whose centroids fall in the study area, with ACS 2017 5-year population, housing units and population below poverty, flooded land area and two exposure estimates), zcta_flood (212 ZIP Code Tabulation Areas with flooded area and built-up dasymetric population exposure) and flood_extent_20170830 (12,788 flood polygons from flood patches of 2 ha or more). Across the tracts, 631.3 square km of tract land was mapped as flooded; about 52,458 residents by the area-weighted rule and about 7,763 by the built-up dasymetric rule lived in the flooded share. Both are lower bounds because the SAR map misses most flooding in built-up areas.</abstract>
+      <purpose>Portfolio and research product that turns a SAR flood extent into population and housing exposure by census geography for environmental health, emergency management and GIS use.</purpose>
+      <supplinf>Independent analysis of public data by Anamika Dristi, Ph.D. Code is MIT licensed. A shapefile copy of the tract layer with short field names is in outputs/gis/tract_flood_exposure_shp/ (field name map in scripts/06_exposure_stats.py). Tabular copies: outputs/tables/flood_by_census_tract.csv, flood_by_zcta.csv and flood_exposure_by_county.csv. Survey margins of error of the ACS estimates are not carried through. ZCTAs are not exactly ZIP codes.</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20170830</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>ground condition (flood map of the Sentinel-1B pass 2017-08-30 12:22 UTC; population from ACS 2013 to 2017 5-year estimates)</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-96.420133</westbc>
+        <eastbc>-94.909465</eastbc>
+        <northbc>30.459147</northbc>
+        <southbc>28.912078</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>inlandWaters</themekey>
+        <themekey>society</themekey>
+        <themekey>boundaries</themekey>
+        <themekey>environment</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>floods</themekey>
+        <themekey>flood mapping</themekey>
+        <themekey>inundation</themekey>
+        <themekey>Hurricane Harvey</themekey>
+        <themekey>synthetic aperture radar</themekey>
+        <themekey>SAR</themekey>
+        <themekey>Sentinel-1</themekey>
+        <themekey>change detection</themekey>
+        <themekey>Otsu threshold</themekey>
+        <themekey>height above nearest drainage</themekey>
+        <themekey>remote sensing</themekey>
+        <themekey>flood exposure</themekey>
+        <themekey>population exposure</themekey>
+        <themekey>census tracts</themekey>
+        <themekey>ZIP Code Tabulation Areas</themekey>
+        <themekey>American Community Survey</themekey>
+        <themekey>dasymetric mapping</themekey>
+        <themekey>environmental health</themekey>
+      </theme>
+      <place>
+        <placekt>Geographic Names Information System (GNIS)</placekt>
+        <placekey>Texas</placekey>
+        <placekey>Houston</placekey>
+        <placekey>Harris County</placekey>
+        <placekey>Fort Bend County</placekey>
+        <placekey>Brazoria County</placekey>
+        <placekey>Wharton County</placekey>
+        <placekey>Brazos River</placekey>
+        <placekey>Buffalo Bayou</placekey>
+        <placekey>Cypress Creek</placekey>
+        <placekey>Spring Creek</placekey>
+        <placekey>Lake Houston</placekey>
+        <placekey>Addicks Reservoir</placekey>
+        <placekey>Barker Reservoir</placekey>
+      </place>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Greater Houston</placekey>
+        <placekey>lower Brazos River</placekey>
+        <placekey>United States</placekey>
+      </place>
+    </keywords>
+    <accconst>None.</accconst>
+    <useconst>None, beyond citing the author and the data sources. Sentinel-1 RTC data: Catalyst RTC of Copernicus Sentinel-1 GRD, CC BY 4.0 (contains modified Copernicus Sentinel data 2017); ESA WorldCover CC BY 4.0; USGS and U.S. Census Bureau data are US public domain. The map misses most flooding under tree canopy and between buildings; do not use it to state that an area stayed dry, or for regulatory, insurance or legal decisions.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Anamika Dristi</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <city>Houston</city>
+          <state>TX</state>
+          <postal>Not provided</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>Not provided (contact by email)</cntvoice>
+        <cntemail>anamikadristi@gmail.com</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>Contains modified Copernicus Sentinel data (2017), processed by Catalyst and hosted by Microsoft Planetary Computer; ESA WorldCover 2020; U.S. Census Bureau ACS 2017 5-year TIGER/Line data and 2017 cartographic ZCTA boundaries.</datacred>
+    <native>Python 3 on macOS with geopandas, pyogrio (GDAL), rasterio and SciPy. OGC GeoPackage 1.4.</native>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Flooded areas inherit the accuracy of the source flood map. Agreement with the independent USGS peak-inundation polygons (Watson and others, 2018), pooled over the upper Brazos, lower Brazos and San Jacinto mapped areas, descending VV map of 30 August 2017, all land: overall accuracy 0.658, precision 0.932, recall 0.107, F1 0.192, kappa 0.123. Open land: precision 0.931, recall 0.268, F1 0.417. Tree cover: precision 0.951, recall 0.022. Built-up: precision 0.702, recall 0.011 (outputs/tables/validation_pooled.csv). Only 4.8 percent of 145 USGS high-water-mark sites had SAR flood within 60 m. The USGS polygons show peak water interpolated from surveyed marks over a DEM and peaks did not coincide with the radar pass, so low recall partly reflects timing. Flooded pixels are usually correct, but most flooding under canopy and in built-up areas is missed. Population, housing and poverty counts are ACS 2017 5-year survey estimates whose margins of error are not carried through; the dasymetric rule assumes residents are spread evenly over WorldCover 2020 built-up cells, which was not checked against address or building data.</attraccr>
+    </attracc>
+    <logic>Each layer has one geometry type (MultiPolygon for tract_flood_exposure and zcta_flood, Polygon for flood_extent_20170830) and one CRS (EPSG:32615). Tract and ZCTA values were computed by rasterizing each polygon onto the 20 m flood grid and counting cells, so a cell is assigned to one tract and one ZCTA. Areas are in square km (0.0004 per cell) and percentages in percent. Exposure counts are model estimates with decimals, not whole people. ZCTA population is the sum of the same pixel-level built-up dasymetric surface used for tracts. Flood polygons were made from 8-connected patches of at least 50 cells (2 ha), polygonized with 4-connectivity and simplified with a 20 m tolerance, so one patch can become several polygons and single polygons can be smaller than 2 ha (area_ha ranges from 0.02 to 3,355.66 ha). Tract values were checked against outputs/tables/flood_by_census_tract.csv.</logic>
+    <complete>tract_flood_exposure holds the 1,002 Texas census tracts whose centroids fall inside the study window (west -96.25, south 29.00, east -95.00, north 30.35); tracts that extend beyond the window or SAR coverage are summarized only over mapped cells (see sar_coverage and land_km2_mapped), so their flood share is partial. zcta_flood holds the 212 ZCTAs whose centroids fall inside the window. flood_extent_20170830 omits flood patches under 2 ha. Exposure is a lower bound because the source map misses most flooding under canopy and between buildings.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Not assessed independently. Tract geometry from the Census TIGER/Line geodatabase and ZCTA geometry from the 1:500,000 cartographic boundary file, projected from geographic coordinates to EPSG:32615. Flood polygon vertices lie on the 20 m analysis grid before 20 m simplification; their positions follow the geolocation of the Sentinel-1 RTC products (terrain corrected by Catalyst) read from their 20 m internal overview.</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>European Space Agency (Copernicus Sentinel-1); radiometric terrain correction by Catalyst</origin>
+            <pubdate>Unknown</pubdate>
+            <title>Sentinel-1 radiometrically terrain corrected (RTC) gamma0 backscatter, VV and VH, collection sentinel-1-rtc</title>
+            <geoform>remote-sensing image</geoform>
+            <othercit>Descending relative orbit 143: 2017-08-06, 2017-08-12, 2017-08-18 (pre) and 2017-08-30 12:22 UTC (post); ascending orbit 34 frames (2017-08-05, 2017-08-29) used only for comparison. Item IDs in outputs/tables/sentinel1_scenes_used.csv. CC BY 4.0. Accessed anonymously 2026-10-23.</othercit>
+            <onlink>https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <mdattim>
+              <sngdate>
+                <caldate>20170806</caldate>
+              </sngdate>
+              <sngdate>
+                <caldate>20170812</caldate>
+              </sngdate>
+              <sngdate>
+                <caldate>20170818</caldate>
+              </sngdate>
+              <sngdate>
+                <caldate>20170830</caldate>
+              </sngdate>
+            </mdattim>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>S1RTC</srccitea>
+        <srccontr>Pre-event median and post-event backscatter for Otsu thresholding and log-ratio change detection.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Pekel, J.F.</origin>
+            <origin>Cottam, A.</origin>
+            <origin>Gorelick, N.</origin>
+            <origin>Belward, A.S.</origin>
+            <pubdate>Unknown</pubdate>
+            <title>JRC Global Surface Water v1.3, occurrence 1984 to 2020</title>
+            <geoform>raster digital data</geoform>
+            <othercit>Method paper: Pekel and others (2016) Nature 540:418-422.</othercit>
+            <onlink>https://planetarycomputer.microsoft.com/dataset/jrc-gsw</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>1984</begdate>
+              <enddate>2020</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>JRCGSW</srccitea>
+        <srccontr>Permanent-water mask (occurrence of 75 percent or more).</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Zanaga, D.</origin>
+            <origin>and others</origin>
+            <pubdate>2021</pubdate>
+            <title>ESA WorldCover 10 m 2020 v100</title>
+            <geoform>raster digital data</geoform>
+            <othercit>CC BY 4.0</othercit>
+            <onlink>https://doi.org/10.5281/zenodo.5571936</onlink>
+            <onlink>https://planetarycomputer.microsoft.com/dataset/esa-worldcover</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>2020</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>WorldCover2020</srccitea>
+        <srccontr>Permanent water (class 80), built-up (class 50) for the urban flag and dasymetric exposure, land cover summaries.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Geological Survey</origin>
+            <pubdate>Unknown</pubdate>
+            <title>3D Elevation Program (3DEP) seamless DEM, 1/3 arc-second</title>
+            <geoform>raster digital data</geoform>
+            <onlink>https://planetarycomputer.microsoft.com/dataset/3dep-seamless</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>Unknown</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>3DEP</srccitea>
+        <srccontr>Height above nearest drainage (HAND) and slope.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Watson, K.M.</origin>
+            <origin>Harwell, G.R.</origin>
+            <origin>Wallace, D.S.</origin>
+            <origin>Welborn, T.L.</origin>
+            <origin>Stengel, V.G.</origin>
+            <origin>McDowell, J.S.</origin>
+            <pubdate>2018</pubdate>
+            <title>Flood-inundation polygons, mapped-area boundaries and high-water marks for Hurricane Harvey, August and September 2017 (data release for USGS Scientific Investigations Report 2018-5070)</title>
+            <geoform>vector digital data</geoform>
+            <pubinfo>
+              <pubplace>Reston, Virginia</pubplace>
+              <publish>U.S. Geological Survey</publish>
+            </pubinfo>
+            <othercit>ScienceBase items 5aa02374e4b0b1c392e68400 (Brazos River) and 5aa023ebe4b0b1c392e6881b (San Jacinto River)</othercit>
+            <onlink>https://doi.org/10.5066/F7VH5N3N</onlink>
+            <onlink>https://doi.org/10.3133/sir20185070</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>201708</begdate>
+              <enddate>201709</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>USGSHarveyInundation</srccitea>
+        <srccontr>Independent reference used only for the accuracy assessment; not an input to the flood classes.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Anamika Dristi</origin>
+            <pubdate>20261023</pubdate>
+            <title>Hurricane Harvey Sentinel-1 SAR flood classes, 30 August 2017, 20 m (flood_classes_20170830_20m.tif)</title>
+            <geoform>raster digital data</geoform>
+            <onlink>https://github.com/anamikadristi/sentinel1-sar-flood-mapping-harvey/blob/main/outputs/gis/flood_classes_20170830_20m.tif</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>20170830</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>FloodClasses</srccitea>
+        <srccontr>Flooded, valid land and urban-flag pixels summed by tract and ZCTA, and polygonized for the flood extent layer.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Census Bureau</origin>
+            <pubdate>Unknown</pubdate>
+            <title>TIGER/Line with selected demographic and economic data, ACS 2017 5-year estimates, census tracts, Texas (ACS_2017_5YR_TRACT_48.gdb.zip)</title>
+            <geoform>vector digital data</geoform>
+            <onlink>https://www2.census.gov/geo/tiger/TIGER_DP/2017ACS/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>2013</begdate>
+              <enddate>2017</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>ACS2017Tracts</srccitea>
+        <srccontr>Tract geometry and B01001e1 (total population), B25001e1 (housing units), B17001e2 (population below poverty).</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Census Bureau</origin>
+            <pubdate>Unknown</pubdate>
+            <title>2017 cartographic boundary file, ZIP Code Tabulation Areas (2010 ZCTA5CE10), 1:500,000 (cb_2017_us_zcta510_500k.zip)</title>
+            <geoform>vector digital data</geoform>
+            <onlink>https://www2.census.gov/geo/tiger/GENZ2017/shp/</onlink>
+          </citeinfo>
+        </srccite>
+        <srcscale>500000</srcscale>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>2017</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>ZCTA2017</srccitea>
+        <srccontr>ZCTA boundaries.</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>Download (scripts/01_download_data.py): STAC queries to Microsoft Planetary Computer with anonymously signed asset URLs; each scene's 20 m internal overview read for a window over the study area (west -96.25, south 29.00, east -95.00, north 30.35); frames from the same pass mosaicked on the analysis grid (UTM 15N, 20 m, 6,222 by 7,622 pixels). JRC occurrence warped by nearest neighbour, WorldCover by mode and the DEM by average onto the same grid.</procdesc>
+        <srcused>S1RTC</srcused>
+        <srcused>JRCGSW</srcused>
+        <srcused>WorldCover2020</srcused>
+        <srcused>3DEP</srcused>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Speckle filtering (scripts/02_preprocess_sar.py): per-pixel median of the three pre-event descending dates, 7 by 7 Lee filter on linear gamma0, conversion to dB. Equivalent number of looks about 13 for single dates and 21 to 23 for the median composite (outputs/tables/speckle_filter_enl.json).</procdesc>
+        <srcused>S1RTC</srcused>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>HAND (scripts/03_hand_dem.py): 3DEP DEM conditioned with pysheds (fill pits and depressions, resolve flats); D8 flow direction and accumulation; cells draining more than 1 square km form the drainage network; HAND is the height above the drainage cell each pixel flows to. Median HAND in the study area 1.9 m.</procdesc>
+        <srcused>3DEP</srcused>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Flood detection (scripts/04_flood_detection.py): log-ratio d = post dB minus pre dB. Split-based Otsu on 4 by 4 km tiles; the 30 most bimodal tiles (Ashman D above 2, dark class 10 to 90 percent of the tile) pooled. VV thresholds -11.78 dB (post-event backscatter) and -3.11 dB (change). Open-water flood = post below threshold AND d below threshold, outside permanent water (JRC occurrence of 75 percent or more, or WorldCover class 80), with HAND of 15 m or less; 8-connected patches under 10 pixels (0.4 ha) removed. Built-up pixels with a VV increase above 3 dB flagged as possible flooded urban. Class precedence: no data, then flood, permanent water, HAND exclusion, urban flag, not flooded. Output: outputs/tables/flood_detection_summary.json.</procdesc>
+        <srcused>S1RTC</srcused>
+        <srcused>JRCGSW</srcused>
+        <srcused>WorldCover2020</srcused>
+        <srcused>3DEP</srcused>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Validation (scripts/05_validation.py): SAR map compared with the USGS inundation polygons inside each USGS mapped-area boundary, only on pixels the SAR map could call flooded (valid, not permanent water, HAND of 15 m or less); overall accuracy, precision, recall, F1 and Cohen's kappa by basin and WorldCover class; share of USGS high-water marks with SAR flood within 60 m. Output: outputs/tables/validation_usgs_inundation.csv; outputs/tables/validation_pooled.csv; outputs/tables/validation_hwm_points.csv.</procdesc>
+        <srcused>USGSHarveyInundation</srcused>
+        <srcused>WorldCover2020</srcused>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Exposure (scripts/06_exposure_stats.py): ACS 2017 5-year tract table joined to tract geometry; tracts and ZCTAs with centroids in the study window rasterized onto the flood grid; valid land = classes 0, 1, 3 and 4; flooded = class 1; built-up = WorldCover class 50 on valid land. Area-weighted exposure = tract count times flooded share of tract land. Built-up dasymetric exposure = tract count times flooded share of tract built-up cells (falls back to the area-weighted rule where a tract has no built-up cells); the same pixel population surface summed by ZCTA. Flood patches of 50 or more 8-connected cells polygonized, simplified at 20 m, and area_ha computed. Written to GeoPackage with layers tract_flood_exposure, zcta_flood and flood_extent_20170830, plus a shapefile copy of the tract layer. Output: outputs/gis/harvey_sar_flood_2017.gpkg; outputs/gis/tract_flood_exposure_shp/.</procdesc>
+        <srcused>WorldCover2020</srcused>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>FGDC CSDGM metadata written from the README, the scripts and direct inspection of the GeoPackage with geopandas and pyogrio (layers, CRS, extents, field types, value ranges).</procdesc>
+        <procdate>20261024</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <indspref>Census tract GEOID (tract_flood_exposure) and ZCTA code (zcta_flood)</indspref>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>G-polygon</sdtstype>
+        <ptvctcnt>1002</ptvctcnt>
+      </sdtsterm>
+      <sdtsterm>
+        <sdtstype>G-polygon</sdtstype>
+        <ptvctcnt>212</ptvctcnt>
+      </sdtsterm>
+      <sdtsterm>
+        <sdtstype>G-polygon</sdtstype>
+        <ptvctcnt>12788</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+        <gridsys>
+          <gridsysn>Universal Transverse Mercator</gridsysn>
+          <utm>
+            <utmzone>15</utmzone>
+            <transmer>
+              <sfctrmer>0.9996</sfctrmer>
+              <longcm>-93.0</longcm>
+              <latprjo>0.0</latprjo>
+              <feast>500000.0</feast>
+              <fnorth>0.0</fnorth>
+            </transmer>
+          </utm>
+        </gridsys>
+        <planci>
+          <plance>coordinate pair</plance>
+          <coordrep>
+            <absres>0.000001</absres>
+            <ordres>0.000001</ordres>
+          </coordrep>
+          <plandu>meters</plandu>
+        </planci>
+      </planar>
+      <geodetic>
+        <horizdn>World Geodetic System of 1984</horizdn>
+        <ellips>World Geodetic System of 1984</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257223563</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>tract_flood_exposure</enttypl>
+        <enttypd>Census tracts (1,002 features) with ACS 2017 counts and SAR flood exposure.</enttypd>
+        <enttypds>Anamika Dristi, this study (scripts/06_exposure_stats.py)</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>GEOID</attrlabl>
+        <attrdef>Census tract identifier (state, county and tract FIPS codes, 11 digits).</attrdef>
+        <attrdefs>U.S. Census Bureau, ACS 2017 5-year TIGER/Line geodatabase</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>FIPS census tract GEOID</codesetn>
+            <codesets>U.S. Census Bureau</codesets>
+          </codesetd>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>NAMELSAD</attrlabl>
+        <attrdef>Census tract name and legal/statistical area description, for example 'Census Tract 5423.01'.</attrdef>
+        <attrdefs>U.S. Census Bureau, ACS 2017 5-year TIGER/Line geodatabase</attrdefs>
+        <attrdomv>
+          <udom>Free text</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>COUNTYFP</attrlabl>
+        <attrdef>County FIPS code within Texas (state 48). Values present: 015, 039, 157, 167, 185, 201, 291, 321, 339, 473, 477, 481.</attrdef>
+        <attrdefs>U.S. Census Bureau, ACS 2017 5-year TIGER/Line geodatabase</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>FIPS county codes (INCITS 31)</codesetn>
+            <codesets>U.S. Census Bureau</codesets>
+          </codesetd>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>pop_2017</attrlabl>
+        <attrdef>Total population, ACS 2017 5-year estimate (B01001e1).</attrdef>
+        <attrdefs>U.S. Census Bureau, ACS 2017 5-year TIGER/Line geodatabase</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>9</rdommin>
+            <rdommax>65528</rdommax>
+            <attrunit>persons</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>housing_units</attrlabl>
+        <attrdef>Housing units, ACS 2017 5-year estimate (B25001e1).</attrdef>
+        <attrdefs>U.S. Census Bureau, ACS 2017 5-year TIGER/Line geodatabase</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>19583</rdommax>
+            <attrunit>housing units</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>pop_below_poverty</attrlabl>
+        <attrdef>Population with income in the past 12 months below the poverty level, ACS 2017 5-year estimate (B17001e2).</attrdef>
+        <attrdefs>U.S. Census Bureau, ACS 2017 5-year TIGER/Line geodatabase</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>4135</rdommax>
+            <attrunit>persons</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>flood_km2</attrlabl>
+        <attrdef>Area of tract cells mapped as flooded open water (class 1).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>75.676</rdommax>
+            <attrunit>square kilometers</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>flood_pct_land</attrlabl>
+        <attrdef>Flooded cells as a percent of valid land cells (classes 0, 1, 3, 4) in the tract.</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>38.955</rdommax>
+            <attrunit>percent</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>builtup_flood_pct</attrlabl>
+        <attrdef>Flooded built-up cells as a percent of built-up cells (WorldCover class 50 on valid land) in the tract.</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>9.080</rdommax>
+            <attrunit>percent</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>land_km2_mapped</attrlabl>
+        <attrdef>Area of valid land cells (classes 0, 1, 3, 4) in the tract.</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>589.411</rdommax>
+            <attrunit>square kilometers</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>builtup_km2</attrlabl>
+        <attrdef>Area of WorldCover built-up cells on valid land in the tract.</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>21.918</rdommax>
+            <attrunit>square kilometers</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>urban_flag_km2</attrlabl>
+        <attrdef>Area of cells flagged possible flooded urban (class 4, not counted as flood).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>3.309</rdommax>
+            <attrunit>square kilometers</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>sar_coverage</attrlabl>
+        <attrdef>Fraction of the tract's cells on the grid that have SAR data (1 minus the no-data share).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>1.000</rdommax>
+            <attrunit>fraction (0 to 1)</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>pop_2017_exposed_areaw</attrlabl>
+        <attrdef>Population in the flooded share of the tract, area-weighted rule (pop_2017 times flooded share of tract land).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>2943.577</rdommax>
+            <attrunit>estimated count</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>pop_2017_exposed_builtup</attrlabl>
+        <attrdef>Population in the flooded share of the tract, built-up dasymetric rule (pop_2017 times flooded share of tract built-up cells; area-weighted where the tract has no built-up cells).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>384.837</rdommax>
+            <attrunit>estimated count</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>housing_units_exposed_areaw</attrlabl>
+        <attrdef>Housing units in the flooded share of the tract, area-weighted rule (housing_units times flooded share of tract land).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>576.299</rdommax>
+            <attrunit>estimated count</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>housing_units_exposed_builtup</attrlabl>
+        <attrdef>Housing units in the flooded share of the tract, built-up dasymetric rule (housing_units times flooded share of tract built-up cells; area-weighted where the tract has no built-up cells).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>108.308</rdommax>
+            <attrunit>estimated count</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>pop_below_poverty_exposed_areaw</attrlabl>
+        <attrdef>Population below poverty in the flooded share of the tract, area-weighted rule (pop_below_poverty times flooded share of tract land).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>192.806</rdommax>
+            <attrunit>estimated count</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>pop_below_poverty_exposed_builtup</attrlabl>
+        <attrdef>Population below poverty in the flooded share of the tract, built-up dasymetric rule (pop_below_poverty times flooded share of tract built-up cells; area-weighted where the tract has no built-up cells).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.000</rdommin>
+            <rdommax>55.548</rdommax>
+            <attrunit>estimated count</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>geom</attrlabl>
+        <attrdef>Feature geometry (MultiPolygon, EPSG:32615).</attrdef>
+        <attrdefs>GeoPackage driver</attrdefs>
+        <attrdomv>
+          <udom>Geometry</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>zcta_flood</enttypl>
+        <enttypd>ZIP Code Tabulation Areas (212 features) with flooded area and dasymetric exposure.</enttypd>
+        <enttypds>Anamika Dristi, this study (scripts/06_exposure_stats.py)</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>zcta</attrlabl>
+        <attrdef>ZIP Code Tabulation Area code (ZCTA5CE10, 5 digits).</attrdef>
+        <attrdefs>U.S. Census Bureau, 2017 cartographic boundary file</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>2010 ZIP Code Tabulation Areas</codesetn>
+            <codesets>U.S. Census Bureau</codesets>
+          </codesetd>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>land_km2_mapped</attrlabl>
+        <attrdef>Area of valid land cells (classes 0, 1, 3, 4) in the ZCTA.</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.00</rdommin>
+            <rdommax>549.50</rdommax>
+            <attrunit>square kilometers</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>flood_km2</attrlabl>
+        <attrdef>Area of ZCTA cells mapped as flooded open water (class 1).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.00</rdommin>
+            <rdommax>68.32</rdommax>
+            <attrunit>square kilometers</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>flood_pct_land</attrlabl>
+        <attrdef>Flooded cells as a percent of valid land cells in the ZCTA.</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.00</rdommin>
+            <rdommax>26.59</rdommax>
+            <attrunit>percent</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>pop_2017_est</attrlabl>
+        <attrdef>Population of the ZCTA, summed from the pixel-level built-up dasymetric surface built from ACS 2017 tract totals.</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.00</rdommin>
+            <rdommax>116431.16</rdommax>
+            <attrunit>estimated persons</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>pop_exposed_builtup</attrlabl>
+        <attrdef>Population on flooded cells, from the same dasymetric surface.</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.00</rdommin>
+            <rdommax>401.38</rdommax>
+            <attrunit>estimated persons</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>geom</attrlabl>
+        <attrdef>Feature geometry (MultiPolygon, EPSG:32615).</attrdef>
+        <attrdefs>GeoPackage driver</attrdefs>
+        <attrdomv>
+          <udom>Geometry</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>flood_extent_20170830</enttypl>
+        <enttypd>Open-water flood polygons (12,788 features) from flood patches of 2 ha or more.</enttypd>
+        <enttypds>Anamika Dristi, this study (scripts/06_exposure_stats.py)</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>fid</attrlabl>
+        <attrdef>GeoPackage feature identifier.</attrdef>
+        <attrdefs>GeoPackage driver</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique integers</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>source</attrlabl>
+        <attrdef>Text label of the source flood map.</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>S1 VV 2017-08-30 vs Aug median</edomv>
+            <edomvd>Sentinel-1 VV flood map, 30 August 2017 post-event scene against the August pre-event median</edomvd>
+            <edomvds>Anamika Dristi, this study (scripts/06_exposure_stats.py)</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>area_ha</attrlabl>
+        <attrdef>Polygon area after 20 m simplification.</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/06_exposure_stats.py)</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.02</rdommin>
+            <rdommax>3355.66</rdommax>
+            <attrunit>hectares</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>geom</attrlabl>
+        <attrdef>Feature geometry (Polygon, EPSG:32615).</attrdef>
+        <attrdefs>GeoPackage driver</attrdefs>
+        <attrdomv>
+          <udom>Geometry</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <overview>
+      <eaover>Shapefile copy of tract_flood_exposure uses short names: NAMELSAD to NAME, pop_2017 to POP17, housing_units to HU17, pop_below_poverty to POV17, flood_km2 to FLD_KM2, flood_pct_land to FLD_PCT, builtup_flood_pct to BLT_FLDPCT, land_km2_mapped to LAND_KM2, builtup_km2 to BLT_KM2, urban_flag_km2 to URBFLG_KM2, sar_coverage to SAR_COV, and the six exposure fields to POP_EXP_AW, POP_EXP_BU, HU_EXP_AW, HU_EXP_BU, POV_EXP_AW, POV_EXP_BU.</eaover>
+      <eadetcit>scripts/06_exposure_stats.py and README.md of the repository; U.S. Census Bureau ACS 2017 5-year table shells B01001, B25001, B17001.</eadetcit>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>Anamika Dristi</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <city>Houston</city>
+          <state>TX</state>
+          <postal>Not provided</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>Not provided (contact by email)</cntvoice>
+        <cntemail>anamikadristi@gmail.com</cntemail>
+      </cntinfo>
+    </distrib>
+    <resdesc>GitHub repository anamikadristi/sentinel1-sar-flood-mapping-harvey, file outputs/gis/harvey_sar_flood_2017.gpkg</resdesc>
+    <distliab>This dataset is an independent analysis of public data, provided as is, without warranty of any kind. The author is not responsible for any use of these data. Read the attribute accuracy and completeness sections before use.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>GPKG</formname>
+          <formvern>1.4</formvern>
+          <formspec>OGC GeoPackage (SQLite), three polygon layers, EPSG:32615</formspec>
+          <transize>12.415</transize>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>https://github.com/anamikadristi/sentinel1-sar-flood-mapping-harvey/blob/main/outputs/gis/harvey_sar_flood_2017.gpkg</networkr>
+              </networka>
+            </computer>
+            <accinstr>Download the file from the GitHub repository page (no account needed for public repositories).</accinstr>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+    <techpreq>Any GIS that reads OGC GeoPackage (for example QGIS, ArcGIS Pro, GDAL/OGR).</techpreq>
+  </distinfo>
+  <metainfo>
+    <metd>20261024</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Anamika Dristi</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <city>Houston</city>
+          <state>TX</state>
+          <postal>Not provided</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>Not provided (contact by email)</cntvoice>
+        <cntemail>anamikadristi@gmail.com</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>

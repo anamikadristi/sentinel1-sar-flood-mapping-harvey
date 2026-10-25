@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Anamika Dristi</origin>
+        <pubdate>20261023</pubdate>
+        <title>Hurricane Harvey open-water flood classes from Sentinel-1 SAR, 30 August 2017, Houston and the lower Brazos River, Texas, 20 m</title>
+        <geoform>raster digital data</geoform>
+        <othercit>GitHub repository sentinel1-sar-flood-mapping-harvey, file outputs/gis/flood_classes_20170830_20m.tif</othercit>
+        <onlink>https://github.com/anamikadristi/sentinel1-sar-flood-mapping-harvey</onlink>
+        <onlink>https://github.com/anamikadristi/sentinel1-sar-flood-mapping-harvey/blob/main/outputs/gis/flood_classes_20170830_20m.tif</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>Single-band uint8 GeoTIFF with a color table (UTM zone 15N, 20 m cells, 6,222 columns by 7,622 rows) classifying open-water flooding from Hurricane Harvey on the Sentinel-1B descending pass of 30 August 2017 (12:22 UTC, 07:22 CDT) across west and north Houston (Addicks and Barker reservoirs, Buffalo Bayou, Cypress and Spring creeks, Lake Houston) and the lower Brazos River lowlands. Flood was mapped by split-based Otsu thresholding of VV backscatter combined with log-ratio change against a median of 6, 12 and 18 August 2017, after masking permanent water (JRC Global Surface Water, ESA WorldCover) and high ground (HAND above 15 m from the USGS 3DEP DEM). The file holds 1,627,407 flooded cells (651.0 square km) out of 44,860,499 valid cells (17,944.2 square km). Compared with USGS peak-inundation maps, flooded cells were usually correct (precision 0.93) but the map found only a small part of the USGS peak extent (recall 0.11).</abstract>
+      <purpose>Portfolio and research product showing a reproducible SAR flood mapping workflow (cloud-hosted data, speckle filtering, terrain and land cover masking, independent validation) and the input to the tract, ZCTA and county exposure summaries in the companion GeoPackage.</purpose>
+      <supplinf>Independent analysis of public data by Anamika Dristi, Ph.D.; it uses none of the author's LSU dissertation data. Code is MIT licensed. The ascending pass of 29 August 2017 (00:26 UTC) was processed the same way for comparison (940.5 square km of flood) but is not included in this file. VH results are in outputs/tables/flood_detection_summary.json. The GeoTIFF band tags 'classes' and 'source' repeat the class list and the scene dates. Figure 3 of the README shows this raster max-pooled to 60 m.</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20170830</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>ground condition (Sentinel-1B pass 2017-08-30 12:22 UTC; pre-event reference 2017-08-06 to 2017-08-18)</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-96.293926</westbc>
+        <eastbc>-94.973309</eastbc>
+        <northbc>30.375210</northbc>
+        <southbc>28.975462</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>inlandWaters</themekey>
+        <themekey>environment</themekey>
+        <themekey>imageryBaseMapsEarthCover</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>floods</themekey>
+        <themekey>flood mapping</themekey>
+        <themekey>inundation</themekey>
+        <themekey>Hurricane Harvey</themekey>
+        <themekey>synthetic aperture radar</themekey>
+        <themekey>SAR</themekey>
+        <themekey>Sentinel-1</themekey>
+        <themekey>change detection</themekey>
+        <themekey>Otsu threshold</themekey>
+        <themekey>height above nearest drainage</themekey>
+        <themekey>remote sensing</themekey>
+      </theme>
+      <place>
+        <placekt>Geographic Names Information System (GNIS)</placekt>
+        <placekey>Texas</placekey>
+        <placekey>Houston</placekey>
+        <placekey>Harris County</placekey>
+        <placekey>Fort Bend County</placekey>
+        <placekey>Brazoria County</placekey>
+        <placekey>Wharton County</placekey>
+        <placekey>Brazos River</placekey>
+        <placekey>Buffalo Bayou</placekey>
+        <placekey>Cypress Creek</placekey>
+        <placekey>Spring Creek</placekey>
+        <placekey>Lake Houston</placekey>
+        <placekey>Addicks Reservoir</placekey>
+        <placekey>Barker Reservoir</placekey>
+      </place>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Greater Houston</placekey>
+        <placekey>lower Brazos River</placekey>
+        <placekey>United States</placekey>
+      </place>
+    </keywords>
+    <accconst>None.</accconst>
+    <useconst>None, beyond citing the author and the data sources. Sentinel-1 RTC data: Catalyst RTC of Copernicus Sentinel-1 GRD, CC BY 4.0 (contains modified Copernicus Sentinel data 2017); ESA WorldCover CC BY 4.0; USGS and U.S. Census Bureau data are US public domain. The map misses most flooding under tree canopy and between buildings; do not use it to state that an area stayed dry, or for regulatory, insurance or legal decisions.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Anamika Dristi</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <city>Houston</city>
+          <state>TX</state>
+          <postal>Not provided</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>Not provided (contact by email)</cntvoice>
+        <cntemail>anamikadristi@gmail.com</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>Contains modified Copernicus Sentinel data (2017), processed by Catalyst and hosted by Microsoft Planetary Computer; JRC Global Surface Water; ESA WorldCover 2020; USGS 3DEP; USGS Hurricane Harvey inundation data release (Watson and others, 2018) for validation.</datacred>
+    <native>Python 3 on macOS with rasterio (GDAL), NumPy, SciPy, scikit-image and pysheds. GeoTIFF, DEFLATE compression, palette color table.</native>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Agreement with the independent USGS peak-inundation polygons (Watson and others, 2018), pooled over the upper Brazos, lower Brazos and San Jacinto mapped areas, descending VV map of 30 August 2017, all land: overall accuracy 0.658, precision 0.932, recall 0.107, F1 0.192, kappa 0.123. Open land: precision 0.931, recall 0.268, F1 0.417. Tree cover: precision 0.951, recall 0.022. Built-up: precision 0.702, recall 0.011 (outputs/tables/validation_pooled.csv). Only 4.8 percent of 145 USGS high-water-mark sites had SAR flood within 60 m. The USGS polygons show peak water interpolated from surveyed marks over a DEM and peaks did not coincide with the radar pass, so low recall partly reflects timing. Flooded pixels are usually correct, but most flooding under canopy and in built-up areas is missed.</attraccr>
+    </attracc>
+    <logic>Values are 0 to 4 and 255 (cell counts in the published file: 0 = 35,305,890; 1 = 1,627,407; 2 = 2,150,816; 3 = 5,272,440; 4 = 503,946; 255 = 2,563,585). Each cell has exactly one class; the class precedence is no data, flood, permanent water, HAND exclusion, possible flooded urban, not flooded. Class areas match outputs/tables/flood_detection_summary.json (flooded 651.0, permanent water 860.3, HAND excluded 2109.0, possible flooded urban 201.6 square km). Grid upper left corner 183340 E, 3362060 N, EPSG:32615.</logic>
+    <complete>Covers the study window (west -96.25, south 29.00, east -95.00, north 30.35) where both the pre-event median and the 30 August descending scene have data; other cells are 255. Only open-water flooding is mapped: flooding under closed tree canopy and most flooding between buildings is not detected, and the possible flooded urban class is a flag that is not counted as flood. Cells with HAND above 15 m or no HAND value are excluded (class 3). Flood patches under 10 cells (0.4 ha) were removed. The map is a snapshot at the pass time, before the Brazos crest and after the Cypress and Spring creek peaks.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Not assessed independently. Positions follow the geolocation of the Sentinel-1 RTC products (terrain corrected by Catalyst) read from their 20 m internal overview and warped to the 20 m UTM zone 15N analysis grid.</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>European Space Agency (Copernicus Sentinel-1); radiometric terrain correction by Catalyst</origin>
+            <pubdate>Unknown</pubdate>
+            <title>Sentinel-1 radiometrically terrain corrected (RTC) gamma0 backscatter, VV and VH, collection sentinel-1-rtc</title>
+            <geoform>remote-sensing image</geoform>
+            <othercit>Descending relative orbit 143: 2017-08-06, 2017-08-12, 2017-08-18 (pre) and 2017-08-30 12:22 UTC (post); ascending orbit 34 frames (2017-08-05, 2017-08-29) used only for comparison. Item IDs in outputs/tables/sentinel1_scenes_used.csv. CC BY 4.0. Accessed anonymously 2026-10-23.</othercit>
+            <onlink>https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <mdattim>
+              <sngdate>
+                <caldate>20170806</caldate>
+              </sngdate>
+              <sngdate>
+                <caldate>20170812</caldate>
+              </sngdate>
+              <sngdate>
+                <caldate>20170818</caldate>
+              </sngdate>
+              <sngdate>
+                <caldate>20170830</caldate>
+              </sngdate>
+            </mdattim>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>S1RTC</srccitea>
+        <srccontr>Pre-event median and post-event backscatter for Otsu thresholding and log-ratio change detection.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Pekel, J.F.</origin>
+            <origin>Cottam, A.</origin>
+            <origin>Gorelick, N.</origin>
+            <origin>Belward, A.S.</origin>
+            <pubdate>Unknown</pubdate>
+            <title>JRC Global Surface Water v1.3, occurrence 1984 to 2020</title>
+            <geoform>raster digital data</geoform>
+            <othercit>Method paper: Pekel and others (2016) Nature 540:418-422.</othercit>
+            <onlink>https://planetarycomputer.microsoft.com/dataset/jrc-gsw</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>1984</begdate>
+              <enddate>2020</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>JRCGSW</srccitea>
+        <srccontr>Permanent-water mask (occurrence of 75 percent or more).</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Zanaga, D.</origin>
+            <origin>and others</origin>
+            <pubdate>2021</pubdate>
+            <title>ESA WorldCover 10 m 2020 v100</title>
+            <geoform>raster digital data</geoform>
+            <othercit>CC BY 4.0</othercit>
+            <onlink>https://doi.org/10.5281/zenodo.5571936</onlink>
+            <onlink>https://planetarycomputer.microsoft.com/dataset/esa-worldcover</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>2020</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>WorldCover2020</srccitea>
+        <srccontr>Permanent water (class 80), built-up (class 50) for the urban flag and dasymetric exposure, land cover summaries.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Geological Survey</origin>
+            <pubdate>Unknown</pubdate>
+            <title>3D Elevation Program (3DEP) seamless DEM, 1/3 arc-second</title>
+            <geoform>raster digital data</geoform>
+            <onlink>https://planetarycomputer.microsoft.com/dataset/3dep-seamless</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>Unknown</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>3DEP</srccitea>
+        <srccontr>Height above nearest drainage (HAND) and slope.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Watson, K.M.</origin>
+            <origin>Harwell, G.R.</origin>
+            <origin>Wallace, D.S.</origin>
+            <origin>Welborn, T.L.</origin>
+            <origin>Stengel, V.G.</origin>
+            <origin>McDowell, J.S.</origin>
+            <pubdate>2018</pubdate>
+            <title>Flood-inundation polygons, mapped-area boundaries and high-water marks for Hurricane Harvey, August and September 2017 (data release for USGS Scientific Investigations Report 2018-5070)</title>
+            <geoform>vector digital data</geoform>
+            <pubinfo>
+              <pubplace>Reston, Virginia</pubplace>
+              <publish>U.S. Geological Survey</publish>
+            </pubinfo>
+            <othercit>ScienceBase items 5aa02374e4b0b1c392e68400 (Brazos River) and 5aa023ebe4b0b1c392e6881b (San Jacinto River)</othercit>
+            <onlink>https://doi.org/10.5066/F7VH5N3N</onlink>
+            <onlink>https://doi.org/10.3133/sir20185070</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>201708</begdate>
+              <enddate>201709</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>USGSHarveyInundation</srccitea>
+        <srccontr>Independent reference used only for the accuracy assessment; not an input to the flood classes.</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>Download (scripts/01_download_data.py): STAC queries to Microsoft Planetary Computer with anonymously signed asset URLs; each scene's 20 m internal overview read for a window over the study area (west -96.25, south 29.00, east -95.00, north 30.35); frames from the same pass mosaicked on the analysis grid (UTM 15N, 20 m, 6,222 by 7,622 pixels). JRC occurrence warped by nearest neighbour, WorldCover by mode and the DEM by average onto the same grid.</procdesc>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Speckle filtering (scripts/02_preprocess_sar.py): per-pixel median of the three pre-event descending dates, 7 by 7 Lee filter on linear gamma0, conversion to dB. Equivalent number of looks about 13 for single dates and 21 to 23 for the median composite (outputs/tables/speckle_filter_enl.json).</procdesc>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>HAND (scripts/03_hand_dem.py): 3DEP DEM conditioned with pysheds (fill pits and depressions, resolve flats); D8 flow direction and accumulation; cells draining more than 1 square km form the drainage network; HAND is the height above the drainage cell each pixel flows to. Median HAND in the study area 1.9 m.</procdesc>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Flood detection (scripts/04_flood_detection.py): log-ratio d = post dB minus pre dB. Split-based Otsu on 4 by 4 km tiles; the 30 most bimodal tiles (Ashman D above 2, dark class 10 to 90 percent of the tile) pooled. VV thresholds -11.78 dB (post-event backscatter) and -3.11 dB (change). Open-water flood = post below threshold AND d below threshold, outside permanent water (JRC occurrence of 75 percent or more, or WorldCover class 80), with HAND of 15 m or less; 8-connected patches under 10 pixels (0.4 ha) removed. Built-up pixels with a VV increase above 3 dB flagged as possible flooded urban. Class precedence: no data, then flood, permanent water, HAND exclusion, urban flag, not flooded. Output: outputs/tables/flood_detection_summary.json.</procdesc>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Validation (scripts/05_validation.py): SAR map compared with the USGS inundation polygons inside each USGS mapped-area boundary, only on pixels the SAR map could call flooded (valid, not permanent water, HAND of 15 m or less); overall accuracy, precision, recall, F1 and Cohen's kappa by basin and WorldCover class; share of USGS high-water marks with SAR flood within 60 m. Output: outputs/tables/validation_usgs_inundation.csv; outputs/tables/validation_pooled.csv; outputs/tables/validation_hwm_points.csv.</procdesc>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Export (scripts/07_figures.py, export_small_geotiff): 20 m class raster copied to outputs/gis with nearest resampling, DEFLATE compression (zlevel 9), band tags 'classes' and 'source', and a color table (0 light grey, 1 blue, 2 dark blue, 3 white, 4 orange, 255 transparent). Output: outputs/gis/flood_classes_20170830_20m.tif.</procdesc>
+        <procdate>20261023</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>FGDC CSDGM metadata written from the README, the scripts and direct inspection of the GeoTIFF with rasterio (extent, CRS, cell size, class counts, tags).</procdesc>
+        <procdate>20261024</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Raster</direct>
+    <rastinfo>
+      <rasttype>Grid Cell</rasttype>
+      <rowcount>7622</rowcount>
+      <colcount>6222</colcount>
+      <vrtcount>1</vrtcount>
+    </rastinfo>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+        <gridsys>
+          <gridsysn>Universal Transverse Mercator</gridsysn>
+          <utm>
+            <utmzone>15</utmzone>
+            <transmer>
+              <sfctrmer>0.9996</sfctrmer>
+              <longcm>-93.0</longcm>
+              <latprjo>0.0</latprjo>
+              <feast>500000.0</feast>
+              <fnorth>0.0</fnorth>
+            </transmer>
+          </utm>
+        </gridsys>
+        <planci>
+          <plance>row and column</plance>
+          <coordrep>
+            <absres>20.0</absres>
+            <ordres>20.0</ordres>
+          </coordrep>
+          <plandu>meters</plandu>
+        </planci>
+      </planar>
+      <geodetic>
+        <horizdn>World Geodetic System of 1984</horizdn>
+        <ellips>World Geodetic System of 1984</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257223563</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>flood_classes_20170830_20m.tif</enttypl>
+        <enttypd>Single-band uint8 raster of flood classes on the 20 m analysis grid, with a palette color table.</enttypd>
+        <enttypds>Anamika Dristi, this study (scripts/04_flood_detection.py)</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>Value</attrlabl>
+        <attrdef>Flood class of the cell (band 1).</attrdef>
+        <attrdefs>Anamika Dristi, this study (scripts/04_flood_detection.py)</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0</edomv>
+            <edomvd>Not flooded: valid land, below the HAND limit, not detected as open-water flood</edomvd>
+            <edomvds>Anamika Dristi, this study (scripts/04_flood_detection.py)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>Flooded open water: VV post-event backscatter below -11.78 dB and VV change below -3.11 dB, outside permanent water, HAND 15 m or less, patch of 10 or more cells</edomvd>
+            <edomvds>Anamika Dristi, this study (scripts/04_flood_detection.py)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>Permanent water: JRC Global Surface Water occurrence of 75 percent or more, or ESA WorldCover 2020 class 80</edomvd>
+            <edomvds>Anamika Dristi, this study (scripts/04_flood_detection.py)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>3</edomv>
+            <edomvd>Excluded: HAND above 15 m or no HAND value</edomvd>
+            <edomvds>Anamika Dristi, this study (scripts/04_flood_detection.py)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>4</edomv>
+            <edomvd>Possible flooded urban (not counted as flood): WorldCover built-up pixel with VV increase above 3 dB</edomvd>
+            <edomvds>Anamika Dristi, this study (scripts/04_flood_detection.py)</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>255</edomv>
+            <edomvd>No data: no valid pre-event or post-event backscatter (GeoTIFF nodata value)</edomvd>
+            <edomvds>Anamika Dristi, this study (scripts/04_flood_detection.py)</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <overview>
+      <eaover>Color table: 0 (230, 230, 225), 1 (42, 120, 214), 2 (13, 54, 107), 3 (255, 255, 255), 4 (235, 104, 52), 255 transparent. Multiply cell counts by 0.0004 to get square kilometers.</eaover>
+      <eadetcit>README.md and scripts/04_flood_detection.py of the repository.</eadetcit>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>Anamika Dristi</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <city>Houston</city>
+          <state>TX</state>
+          <postal>Not provided</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>Not provided (contact by email)</cntvoice>
+        <cntemail>anamikadristi@gmail.com</cntemail>
+      </cntinfo>
+    </distrib>
+    <resdesc>GitHub repository anamikadristi/sentinel1-sar-flood-mapping-harvey, file outputs/gis/flood_classes_20170830_20m.tif</resdesc>
+    <distliab>This dataset is an independent analysis of public data, provided as is, without warranty of any kind. The author is not responsible for any use of these data. Read the attribute accuracy and completeness sections before use.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>GeoTIFF</formname>
+          <formvern>1.0 (GeoKey directory revision 1.0, written by GDAL through rasterio)</formvern>
+          <formspec>Single band, uint8, palette color table, nodata 255, EPSG:32615</formspec>
+          <filedec>DEFLATE compression</filedec>
+          <transize>1.778</transize>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>https://github.com/anamikadristi/sentinel1-sar-flood-mapping-harvey/blob/main/outputs/gis/flood_classes_20170830_20m.tif</networkr>
+              </networka>
+            </computer>
+            <accinstr>Download the file from the GitHub repository page (no account needed for public repositories).</accinstr>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+    <techpreq>Any GIS that reads GeoTIFF (for example QGIS, ArcGIS Pro, GDAL).</techpreq>
+  </distinfo>
+  <metainfo>
+    <metd>20261024</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Anamika Dristi</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <city>Houston</city>
+          <state>TX</state>
+          <postal>Not provided</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>Not provided (contact by email)</cntvoice>
+        <cntemail>anamikadristi@gmail.com</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>
